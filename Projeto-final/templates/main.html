@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Status da Situação</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1>Status do solo</h1>
+
+    <div id="content">
+        <div id="status"></div>
+    </div>
+
+    <div id= "irrigacao">
+        <img id = "irrigacao" src = "img/irrigacao.png">
+    </div>
+
+    <div id="irrigacao_ret">
+        <p>Humidade: <span id="umidade"></span>%</p>
+    </div>
+
+    <div id= "solo">
+        <img id="imagemSolo" src="img/seco.jpg">
+    </div>
+
+    <script>
+        // Função para buscar dados da API
+        function obterDadosDaAPI() {
+            $.ajax({
+                url: '/get-umidade',  // Caminho para a rota Flask que fornece os dados
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    // Atualize o conteúdo da div com os novos dados
+                    $('#umidade').text(data[0]);
+                },
+                error: function (error) {
+                    console.error('Erro ao obter dados da API:', error);
+                }
+            });
+        }
+
+        // Atualize os dados a cada 5 segundos (5000 milissegundos)
+        setInterval(obterDadosDaAPI, 5000);
+
+        // Chame a função inicialmente para carregar os dados imediatamente
+        obterDadosDaAPI();
+    </script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

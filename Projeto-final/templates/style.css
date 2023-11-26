@@ -1,0 +1,64 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#content {
+    position: relative;
+}
+
+h1 {
+    color: #5a2d0d;
+}
+
+#irrigacao {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15%;
+    padding-right: 50px;
+    text-align: right;
+}
+
+#irrigacao_ret {
+    width: 200px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 200px;
+    margin-right: 50px;
+    background-color: #3498db;
+    border: 2px solid #2980b9;
+    position: absolute;
+    
+}
+
+#irrigacao_ret > p {
+    margin-top: 36px;
+}
+
+
+#solo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+#solo img {
+    width: 100%;
+    object-fit: cover;
+}
+#status {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
