@@ -8,7 +8,7 @@ CORS(app)
 db_host = "localhost"
 db_database = "ProjetoFinal"
 db_user = "postgres"
-db_password = "postgres"
+db_password = "1@jean"
 db_port = "5432"
 
 conn = psycopg2.connect(

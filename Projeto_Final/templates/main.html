@@ -12,19 +12,26 @@
         <div id="status"></div>
     </div>
 
-    <div id= "irrigacao">
-        <img id = "irrigacao" src = "img/irrigacao.png">
+    <div id="humidade">
+        <div id="irrigacao">
+            <img id="irrigacao" src="img/irrigacao.png">
+        </div>
+        <div id="irrigacao_ret">
+            <label for="inputUmidade">Humidade:</label>
+            <input type="text" id="inputUmidade" placeholder="Insira a umidade">
+            <button onclick="atualizarUmidadeManual()">Atualizar</button>
+            <p>Humidade: <span id="umidade">0</span>%</p>
+        </div>
     </div>
-
-    <div id="irrigacao_ret">
-        <p>Humidade: <span id="umidade"></span>%</p>
-    </div>
+    
 
     <div id= "solo">
         <img id="imagemSolo" src="img/seco.jpg">
     </div>
 
     <script>
+        var humidade = 0;
+        //alert(humidade);
         // Função para buscar dados da API
         function obterDadosDaAPI() {
             $.ajax({
@@ -33,7 +40,8 @@
                 dataType: 'json',
                 success: function (data) {
                     // Atualize o conteúdo da div com os novos dados
-                    $('#umidade').text(data[0]);
+                    humidade = data[0];
+                    $('#umidade').text(humidade);
                 },
                 error: function (error) {
                     console.error('Erro ao obter dados da API:', error);
