@@ -1,60 +1,77 @@
 /* style.css */
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('img/background.jpg');
+    background-image: url('img/forest.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 #content {
-    position: relative;
+    margin-top: 20px;
 }
 
 h1 {
-    color: #5a2d0d;
+    color: #009688; /* Cor verde escuro para o título */
 }
 
 #humidade {
     display: flex;
-    text-align: center;
-    flex-flow: column nowrap;
     justify-content: center;
-    width: 10%;  
-    margin: auto;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #fff; /* Cor de fundo da div "humidade" */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #humidade img {
-    max-width:300px;
-    max-height:250px;
-    width: auto;
-    height: auto;
+    max-width: 100px; /* Limita a largura da imagem de irrigação */
 }
 
-#irrigacao {
-    width: 15%;   
-    flex: 1;
+
+#irrigacao_ret p {
+    font-size: 18px;
+    font-weight: bold;
 }
 
-#irrigacao_ret {
-    width: 200px;
-    background-color: #3498db;
-    border: 2px solid #2980b9; 
-    flex: 1;
+.mensagem-irrigacao {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8FBC8F;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Faz com que a mensagem se estenda até o final da tela na horizontal */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
 }
+
 
 #solo {
     position: fixed;
     bottom: 0;
     left: 0;
+    margin: auto;
+    height: 50px;
     width: 100%;
     text-align: center;
+    padding-bottom: 70px;
 }
 
 #solo img {
     width: 100%;
-    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
 }
 
 #status {
