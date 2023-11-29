@@ -14,7 +14,7 @@ statusDiv.style.color = corDoTexto;
 //     var umidadeManual = parseFloat(inputUmidade.value);
 //     if (!isNaN(umidadeManual)) {
 //         umidadeSpan.textContent = umidadeManual;
-//         verificarUmidade(umidadeManual); // Passe a umidade manual como argumento para a função
+//         verificarUmidade(umidadeManual);
 //     } else {
 //         alert("Por favor, insira um valor numérico válido para a umidade.");
 //     }
@@ -26,19 +26,19 @@ function verificarUmidade(umidade) {
     var mensagemIrrigacao = document.getElementById("mensagemIrrigacao");
 
     if (umidade < 20) {
-        soloDiv.style.backgroundColor = "#D2B48C"; // Marrom claro para seco
+        soloDiv.style.backgroundColor = "#D2B48C";
         statusDiv.textContent = "Status: Seco";
         statusDiv.style.color = corDoTexto;
-        mensagemIrrigacao.style.display = "block"; // Exibe a mensagem quando estiver seco
+        mensagemIrrigacao.style.display = "block";
     } else {
-        soloDiv.style.backgroundColor = "#8FBC8F"; // Verde claro para molhado
+        soloDiv.style.backgroundColor = "#8FBC8F";
         statusDiv.textContent = "Status: Molhado";
         statusDiv.style.color = "#009688";
-        mensagemIrrigacao.style.display = "none"; // Oculta a mensagem quando estiver molhado
+        mensagemIrrigacao.style.display = "none";
     }
 }
-// Comente ou descomente a linha a seguir para alternar entre automático e manual
+
 // verificarUmidade();
 
-// Chame a função inicialmente para configurar a imagem com base na umidade
-verificarUmidade(0); // Inicialize com um valor, por exemplo, 0
+
+verificarUmidade(0);

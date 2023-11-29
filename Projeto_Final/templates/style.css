@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-    color: #009688; /* Cor verde escuro para o título */
+    color: #009688;
 }
 
 #humidade {
@@ -25,14 +25,14 @@ h1 {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background-color: #fff; /* Cor de fundo da div "humidade" */
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #humidade img {
-    max-width: 100px; /* Limita a largura da imagem de irrigação */
+    max-width: 100px;
 }
 
 
@@ -51,8 +51,8 @@ h1 {
     color: #fff;
     padding: 20px;
     text-align: center;
-    width: 100%; /* Faz com que a mensagem se estenda até o final da tela na horizontal */
-    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
