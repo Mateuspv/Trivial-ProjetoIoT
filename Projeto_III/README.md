@@ -64,8 +64,7 @@ O código HTML está embutido no programa e exibe os dados de umidade e temperat
 
 ## Autores
 
-Projeto criado e executado por: Ana Julia G. Peres, Anna Clara Bragato, Arthur Lunkes e Natali Santos.
-
+Projeto criado e executado por: Mateus Veroneze, Jean Trojan, e Lucas loeffler
 ## Conclusão
 
 O projeto demonstra a criação de um sistema IoT simples usando um dispositivo ESP8266 (NodeMCU), um sensor DHT11 para medir umidade e temperatura e a criação de um servidor web.
