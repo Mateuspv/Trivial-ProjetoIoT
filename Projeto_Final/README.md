@@ -47,28 +47,17 @@ db_port = "5432" //Porta do Banco
 
 ## Funcionamento:
 
-### Função setup()
-Inicializa a comunicação serial.
-Inicializa o sensor DHT11.
-Configura a rede Wi-Fi.
-Conecta-se à rede Wi-Fi especificada.
-Inicia o servidor web.
+A documentar..
 
-### Função loop()
-Espera por clientes que se conectem ao servidor web.
-Lê a primeira linha da solicitação HTTP do cliente.
-Lê a umidade e a temperatura do sensor DHT11.
-Gera uma página HTML que exibe os dados de umidade e temperatura.
-Responde a solicitações HTTP, fornecendo os dados ou a página HTML.
+### Front end
 
-### Solicitação "/get-data"
+
+### Arduino com Sensor de Solo
+
+
+### API
 Se a solicitação do cliente for "/get-data", o servidor responde com os dados de umidade e temperatura em formato de texto.
 
-### Outras Solicitações
-Se a solicitação não for "/get-data", o servidor responde com a página HTML que exibe os dados.
-
-### Página HTML
-O código HTML está embutido no programa e exibe os dados de umidade e temperatura em tempo real. Ele também inclui links para folhas de estilo CSS e scripts JavaScript para atualizar os dados automaticamente a cada 2 segundos.
 
 ## Autores
 
@@ -76,4 +65,4 @@ Projeto criado e executado por: Mateus Poleselo, Jean Trojan, Lucas Loeffler
 
 ## Conclusão
 
-O projeto demonstra a criação de um sistema IoT simples usando um dispositivo ESP8266 (NodeMCU), um sensor DHT11 para medir umidade e temperatura e a criação de um servidor web.
+
