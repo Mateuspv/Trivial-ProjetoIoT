@@ -69,8 +69,7 @@ Também é possível controlar o dispositivo diretamente pressionando o botão f
 
 ## Autores
 
-Este código foi criado por: Ana Julia G. Peres, Anna Clara, Natali Santos, Arthur Lunkes.
-
+Este código foi criado por: Mateus Veroneze, jean Trojan, Lucas loeffler
 ## Conclusão
 
 Este projeto demonstra como controlar um dispositivo por meio da plataforma SinricPro e uma conexão Wi-Fi. Você pode adaptar este código para controlar outros dispositivos e adicionar mais funcionalidades conforme necessário.
